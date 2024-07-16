@@ -7,7 +7,7 @@
 body > header{
     background-color:rgb(10, 10, 10);
     padding: 16px 0;
-    color: rgb(243, 204, 204);
+    color: #f8f6f6;
 }
 
 header li {
@@ -18,14 +18,14 @@ header li {
 }
 
 header li a{
-    color: rgb(243, 204, 204);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
 header .container{
     display: flex;
-   align-items: center;
-   justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
 }
 
 
@@ -42,8 +42,8 @@ header .container{
 }
 
 .articles article img {
-    /*height: 100px;*/
     width: 100%;
+    border-radius: 5%;
 }
 
 .articles article {
@@ -65,22 +65,24 @@ section h2,
 }
 
 .articles article a{
-    background-color: blue;
     color: white;
     padding: 8px;
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    margin-top: 8px;
+    margin-top: 6px;
 }
 
 .articles article a:hover{
-    text-decoration: underline; 
+    text-decoration: none;
 }
 
 .articles article p,
 .articles article a {
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    text-align: justify;
+    word-break: normal;
 }
 
 .articles article h3{
@@ -92,35 +94,57 @@ section h2{
 }
 
 #esportes {
-    background-color: rgba(0, 255, 0,0.3);
+    background-color: rgb(24, 22, 22);
+    color:#f8f6f6;
 }
 
 #esportes .articles article a{
-    background-color: rgb(25, 110, 25);
-  
+    background-color: rgb(231, 107, 25);
 }
 
 #economia{
-    background-color:rgb(243, 210, 21);
+    background-color:rgb(50, 54, 46);
+    color:#f8f6f6
 }
 
 #economia .articles article a{
-    background-color: orangered;
+    background-color: rgb(231, 107, 25);
 }
 
 #entretenimento {
-    background-color: rgba(38, 0, 255, 0.3);
+    background-color: rgb(231, 107, 25);
+    color:#f8f6f6
 }
 
 #entretenimento .articles article a{
-    background-color: rgb(18, 13, 85);
-  
+    background-color: rgb(12, 12, 12);
 }
 
 #tecnologia{
-    background-color:rgba(243, 21, 213,0.5);
+    background-color:rgb(20, 20, 20);
+    color:#f8f6f6
 }
 
 #tecnologia .articles article a{
-    background-color: rgb(87, 9, 133);
+    background-color: rgb(231, 107, 25);
 }
+
+footer{
+    background-color: black;
+    color: #f8f6f6;
+    height: 70px;
+    text-align: center;
+}
+
+#botao .o-botao {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(231, 107, 25);
+    color: #f8f6f6;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 15px;
+}
+
