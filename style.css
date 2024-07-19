@@ -137,8 +137,8 @@ footer{
 }
 
 #botao .o-botao {
-    font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(231, 107, 25);
+    font-family: Arial, Helvetica, sans-serif;
     color: #f8f6f6;
     border: none;
     padding: 10px 20px;
