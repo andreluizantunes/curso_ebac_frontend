@@ -15,9 +15,9 @@
             <img src="./images_ebac/logo.png" alt="capelo e diploma">
             <h1>Calculadora de médias</h1>
         </header>
-        <form>
-            <input type="text" placeholder="Nome da atividade" required />
-            <input type="number" placeholder="Nota da atividade" min="0" max="10" required />
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade" placeholder="Nome da atividade" required />
+            <input type="number" id="nota-atividade" placeholder="Nota da atividade" min="0" max="10" required />
             <button type="submit">Adicionar +</button>
         </form>
         <table cellspacing="0">
@@ -35,20 +35,16 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Atividade 1</td>
-                    <td>7</td>
-                    <td><img src="./images_ebac/aprovado.png"calt="Emoji festejando" /></td>
-                </tr>
             </tbody>
             <tfoot>
                 <tr>
                     <td>Média final</td>
-                    <td>7</td>
-                    <td><span class="resultado">Aprovado</span></td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
                 </tr>
             </tfoot>
         </table>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
