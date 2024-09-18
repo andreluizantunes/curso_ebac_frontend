@@ -41,3 +41,14 @@ button{
 #cancelar{
     background-color: red;
 }
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li{
+    max-width: 25%;
+    list-style: none;
+}
+ul li img{
+    width: 100%;
+}
