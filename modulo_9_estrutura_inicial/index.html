@@ -19,14 +19,14 @@
     </header>
     <form>
         <h2>Inserir nova imagem</h2>
-        <input type="url" required placeholder="URL da imagem">
+        <input type="url" id="endereco-imagem-nova" required placeholder="URL da imagem">
         <button type="submit">Adicionar</button>
         <button id="cancelar" type="reset">Cancelar</button>
     </form>
     <ul>
         <li>
             <img src="/images/foto1.jpg" alt="Pintura de um gato">
-            <div>
+            <div class="overlay-imagem-link">
                 <a href="/images/foto1.jpg" title="Ver imagem em tamanho real" target="_blank">
                     Ver imagem em tamanho real
                 </a>
@@ -34,7 +34,7 @@
         </li>
         <li>
             <img src="/images/foto2.jpg" alt="Pintura de um gato">
-            <div>
+            <div class="overlay-imagem-link">
                 <a href="/images/foto2.jpg" title="Ver imagem em tamanho real" target="_blank">
                     Ver imagem em tamanho real
                 </a>
@@ -42,7 +42,7 @@
         </li>
         <li>
             <img src="/images/foto3.jpg" alt="Pintura de um gato">
-            <div>
+            <div class="overlay-imagem-link">
                 <a href="/images/foto3.jpg" title="Ver imagem em tamanho real" target="_blank">
                     Ver imagem em tamanho real
                 </a>
