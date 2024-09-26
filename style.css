@@ -1,105 +1,68 @@
-*{
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dddada;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
-    margin: 20px;
-    padding: 0;
-    text-align: center;
+.todo-container {
+    background: white;
+    padding: 180px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-    color: #333;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
-form {
-    margin-bottom: 20px;
-}
-
-#taskInput {
-    padding: 10px;
-    width: 70%;
-    font-size: 16px;
+#task-input {
+    width: 45%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-right: 10px;
+    font-size: large;
 }
 
 button {
-    padding: 10px 15px;
-    background-color: #28a745;
+    padding: 15px 15px;
+    background-color: #4b3ff3;
     color: white;
     border: none;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 8px;
+    font-size: large;
+}
+
+span {
+    color: #9dade4;
+    font-size: 1rem;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #271daf;
+    transition: 0.5s;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
 li {
     padding: 10px;
-    font-size: 18px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 5px;
 }
 
 li.completed {
     text-decoration: line-through;
     color: #888;
-}
-
-.task-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-.task-buttons button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.task-buttons .delete-btn {
-    background-color: #dc3545;
-}
-
-.task-buttons .edit-btn {
-    background-color: #ffc107;
-}
-
-.task-buttons .done-btn {
-    background-color: #28a745;
-}
-
-.task-buttons button:hover {
-    opacity: 0.9;
-}
-
-/* Responsividade */
-@media (max-width: 768px) {
-    li {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .task-buttons {
-        justify-content: flex-start;
-        margin-top: 10px;
-    }
 }

@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Tarefas</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" href="./style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Lista de Tarefas</h1>
-    <form id="taskForm">
-        <input type="text" id="taskInput" placeholder="Adicione uma tarefa" required>
-        <button type="submit">Cadastrar Tarefa</button>
-    </form>
-
-    <ul id="taskList"></ul>
-
-    <script src="./script.js"></script>
+    <div class="todo-container">
+        <h1>Lista de Tarefas</h1>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Nova tarefa" required>
+            <button type="submit"><strong><span>+</span> Adicionar Tarefa</strong></button>
+        </form>
+        <ul id="task-list"></ul>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
